@@ -1,0 +1,32 @@
+.tm-mod-block .tm-mod-content{
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    overflow: auto;
+    padding: 10px 15px;
+}
+.tm-mod-block.owl-carousel .tm-mod-content{
+    border: none;
+}
+.tm-mod-image img{
+    margin-left: auto;
+    margin-right: auto;
+}
+.tm-mod-block .tm-align-center{
+    text-align: center;
+}
+.tm-mod-block .tm-align-right{
+    text-align: right;
+}
+.tm-mod-block .tm-align-left{
+    text-align: left;
+}
+.tm-mod-block .tm-image-2{
+    float: left;
+    padding: 15px 15px;
+}
+.tm-mod-btn{
+    float: right;
+    margin: 0 25px 0 0;
+    width: 100%;
+    text-align: right;
+}

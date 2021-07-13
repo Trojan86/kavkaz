@@ -1,0 +1,49 @@
+.tm-mod-title{
+    font-size: 20px;
+}
+.tm-mod-block{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.tm-mod-author{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tm-mod-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.tm-mod-block .col-xs-12 {
+    width: 100%;
+}
+@media (min-width: 992px){
+    .tm-mod-block .col-md-3 {
+        width: 25%;
+        float: left;
+    }
+}
+@media (min-width: 768px){
+    .tm-mod-block .col-sm-6 {
+        width: 50%;
+        float: left;
+    }
+}
+@media (min-width: 1200px){
+    .tm-mod-block .col-lg-3 {
+        width: 25%;
+        float: left;
+    }
+}
+
+.tm-mod-block .col-md-3, .tm-mod-block .col-lg-3, .tm-mod-block .col-sm-6, .tm-mod-block .col-xs-12{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/*journal*/
+.side-column .owl-carousel.tm-mod-block .owl-wrapper-outer {
+    overflow: hidden;
+}

@@ -1,0 +1,68 @@
+.modal-backdrop.in {
+    opacity: 0.5;
+}
+.tm-container {
+    padding: 0px;
+    width: initial;
+}
+.tm-container .row {
+    margin: 0px;
+}
+.tm-container #content {
+    padding: 20px 20px 0 20px;
+}
+.tm-container .form-horizontal .form-group label.control-label {
+    width: initial;
+}
+.tm-container .form-group label.control-label {
+    width: initial;
+}
+.tm-container .form-horizontal .form-group label.upload-label {
+    width: 100%;
+}
+.tm-container .form-control {
+    border-radius: 0px;
+}
+.tm-container .form-group label.upload-label {
+    width: 100%;
+    display: block;
+    padding: 0px;
+}
+.tm-container .required label.upload-label:before {
+    content: "";
+    display: none;
+}
+.tm-container .form-group mark.form-control{
+    padding: 6px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.tm-container form .form-group label+div.text-danger {
+    width: auto;
+    float: left;
+}
+.tm-container .upload-label .btn {
+    font-size: 12px;
+    border-radius: 0px;
+}
+.tm-container .form-group .rating-radio label[class*="star-"] {
+    display: block;
+    width: 30px;
+    float: left;
+}
+.tm-container .tm-list .review-list .review-thumb {
+    border: none;
+}
+.tm-container .tm-list .review-list{
+    border: 1px solid #ddd;
+}
+.tm-container .h4, .tm-container h4 {
+    font-size: 18px;
+}
+.tm-container .alert button.close{
+    right: 24px;
+}
+.tm-container .pagination {
+    padding-left: 20px;
+    border-radius: 2px;
+}

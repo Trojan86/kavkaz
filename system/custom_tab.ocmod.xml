@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+  <name>Custom Tabs</name>
+  <code>custom_tabs</code>
+  <version>1.0</version>
+  <author>Arekaev Aleksey</author>
+  <link>mailto:web-mehanik@yandex.ru</link>
+  <file path="admin/language/*/common/column_left.php">
+   <operation>
+      <search>
+        <![CDATA[$_['text_product']]]>
+      </search>
+      <add position="before">
+        <![CDATA[
+        $_['text_custom_tab'] = 'Custom Tabs';
+        ]]>
+      </add>
+    </operation>
+  </file>
+  <file path="admin/controller/common/column_left.php">
+   <operation>
+      <search>
+        <![CDATA[if ($this->user->hasPermission('access', 'catalog/recurring')) {]]>
+      </search>
+      <add position="before">
+        <![CDATA[if ($this->user->hasPermission('access', 'catalog/custom_tab')) {
+        $catalog[] = array(
+          'name'     => $this->language->get('text_custom_tab'),
+          'href'     => $this->url->link('catalog/custom_tab', 'token=' . $this->session->data['token'], true),
+          'children' => array()   
+        );
+      }]]>
+      </add>
+    </operation>
+  </file>
+</modification>

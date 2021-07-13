@@ -1,0 +1,51 @@
+.tm-container .panel {
+     width: 100%;
+ }
+.tm-container .row .control-label {
+    width: 100%;
+}
+.tm-container .fa-stack span {
+    padding-top: 0px !important;
+}
+.tm-container button.btn-primary {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    border: none;
+    background-image: none;
+}
+.tm-container .upload-label {
+    width: 100%;
+}
+.tm-container label.upload-label:before{
+    content: '';
+}
+.tm-container .modal-header .close {
+    width: 36px;
+}
+.tm-container .form-group div[class*="col-"] {
+     width: 100%;
+     max-width: 100%;
+}
+.tm-container .row form[class*="form-"] .control-label {
+    text-align: left;
+}
+.tm-container .breadcrumb {
+    background: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.tm-container .breadcrumb a{
+    color: #999999;
+}
+.tm-container .row h1 {
+    text-align: center;
+    font-family: 'Oswald';
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 48px !important;
+    letter-spacing: -0.5px;
+    word-spacing: 0px;
+    text-transform: uppercase;
+    margin: 0;
+}
