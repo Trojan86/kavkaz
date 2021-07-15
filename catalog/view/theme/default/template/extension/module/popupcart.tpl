@@ -9,8 +9,8 @@
 		</div>
 		<div class="cart__list-wrap">
 			<?php if ($products || $vouchers) { ?>
-			<?php foreach ($products as $key => $product) { ?>
 			<ul class="cart__list">
+			<?php foreach ($products as $key => $product) { ?>
 				<li class="cart__item">
 					<div class="cart__img-box">
 						<div class="cart__img" alt="product image">
@@ -61,8 +61,8 @@
 					</div>
 					<div class="btn cart__btn-remove-box"><button type="button" onclick="$('.pr<?php echo $product['id']; ?>').val(''); updateCart(this,'<?php echo $product['id']; ?>', '<?php echo $product['key']; ?>')" title="<?php echo $button_remove; ?>" class="btn btn-danger btn-xs"><span class="cart__btn-remove"></span></button></div>
 				</li>
-			</ul>
 			<?php } ?>
+			</ul>
 			<?php } ?>
 
 		<?php if ($products || $vouchers) { ?>
@@ -281,7 +281,7 @@
 	}
 </script>
 
-<script>
+<script type="text/javascript">
 	document.addEventListener('DOMContentLoaded', function () {
 		let col = document.querySelector(".static<?php echo $product['product_id']; ?>").innerHTML,
 				staticWeight = document.querySelector(".static_weight<?php echo $product['product_id']; ?>").innerHTML,
