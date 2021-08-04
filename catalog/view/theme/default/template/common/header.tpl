@@ -233,7 +233,7 @@
             </li>
           </ul>
           <div class="pl-15">
-            <ul class="header__mob-phone-list">
+            <!-- <ul class="header__mob-phone-list">
               <li class="header__mob-phone-item">
                 <a href="<?php echo $contact; ?>"><?php echo $telephone; ?></a>
               </li>
@@ -244,7 +244,7 @@
                 <i class="header__item-img header__time-icon icon-time"></i>
                 <span class="header__time-text">10:00 - 21:00</span>
               </div>
-            </div>
+            </div>-->
             <div class="header__top-item header__mail-wrap popup__btn" data-popup="mail">
               <i class="header__item-img header__mail-icon icon-pen"></i>
               <span class="header__mail-text">Написать директору</span>

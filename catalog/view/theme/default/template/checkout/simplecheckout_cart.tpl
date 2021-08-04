@@ -53,7 +53,7 @@
             </td>
             <td class="cart__price-info cart__price-info-ps">
                 <?php if ($product['old_price']) { ?>
-                <span class="product__price-sale"><span><?php echo $product['old_price'] ?></span></span>
+                <span class="product__price-sale"><span><?php echo $product['old_price'] ?></span><br></span>
                 <?php } ?>
                 <span><?php echo $product['price'] ?></span> /<span><?php echo $product['weight_product'] ?></span>
             </td>
@@ -95,8 +95,8 @@
                             </span>
                 </div>
             </td>
-            <td class="cart__weight weight"><span style="position: absolute">
-                                                      <?php echo $product['weight_total'] ?>
+            <td class="cart__weight weight"><span>
+                                                      <span class="opacity06"><?php echo $product['weight_total'] ?> <?php echo $product['cart_weight']; ?></span>
                                                     <img class="cart__info-weight-img" src="catalog/view/theme/default/img/info.svg" alt="info icon">
                                                     <div class="cart__info-weight-text">Минимальный заказ <?php echo $product['weight_product'] ?></div>
                                                 </span></td>
@@ -165,7 +165,7 @@
                             </span>
                     </div>
                 </td>
-                <td class="cart__weight weight"><span style="position: absolute">
+                <td class="cart__weight weight"><span>
                                                     200г
                                                     <img class="cart__info-weight-img" src="catalog/view/theme/default/img/info.svg" alt="info icon">
                                                     <div class="cart__info-weight-text">Минимальный заказ 200 г</div>
@@ -209,7 +209,7 @@
                             </span>
                     </div>
                 </td>
-                <td class="cart__weight weight"><span style="position: absolute">
+                <td class="cart__weight weight"><span>
                                                     200г
                                                     <img class="cart__info-weight-img" src="catalog/view/theme/default/img/info.svg" alt="info icon">
                                                     <div class="cart__info-weight-text">Минимальный заказ 200 г</div>
@@ -359,10 +359,6 @@
     if (($('.lavash').css('display') == 'none') && ($('.pribori').css('display') == 'none')){
         $('.accompanying__list').removeClass('active');
     }
-
-
 </script>
-
-
 <?php } ?>
 </div>
